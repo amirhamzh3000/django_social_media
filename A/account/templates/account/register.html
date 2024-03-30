@@ -2,7 +2,7 @@
 
 
 {% block content %}
-<form action="" method="post">
+<form action="" method="post" class="col-md-4" novalidate>
 
     {% csrf_token %}
     {{ form.as_p }}

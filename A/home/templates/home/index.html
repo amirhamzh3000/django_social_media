@@ -3,7 +3,11 @@
 
 {% block content %}
 
+<div class="card">
 
-<h2>index page</h2>
+    {%for post in posts%}
+<a class="card-body" href="{{ post.get_absolute_url }}">{{ post.body | truncatewords:8 }}</a>
+    {% endfor %}
+</div>
 
 {% endblock %}
